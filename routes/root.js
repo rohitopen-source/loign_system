@@ -3,6 +3,9 @@ const route = require('express').Router()
 const passport = require('../passport')
 const Users = require('../db').Users
 
+route.get('/',(req,res) => {
+    res.render('login')
+})
 route.get('/login',(req,res) => {
     res.render('login')
 })
